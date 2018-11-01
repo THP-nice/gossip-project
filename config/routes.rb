@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :static_pages
-  resources :gossips
-  root 'static_pages#home'
+  get '/', to: 'static_pages#home'
+  get '/team', to: 'static_pages#team'
+  get '/contact', to: 'static_pages#contact'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+  resources :users
+  resources :gossips do
+    resources :comments
+  end
 end

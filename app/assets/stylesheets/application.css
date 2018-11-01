@@ -1,3 +1,50 @@
+.card-box {
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+  font-variant: small-caps;
+  font-family: URW Gothic L;
+}
+
+.btn-success {
+  display: flex;
+  justify-content: center;
+}
+
 header {
-  background-color: black;
+  background-color: rgb(52, 58, 64);
+}
+
+body {
+  background-image: linear-gradient(-90deg, darkseagreen, darkslategrey);
+}
+
+a {
+  color: black
+}
+
+a.hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.card-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.card-time {
+  font-size: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px!important;
+  margin-top: 20px!important;
 }

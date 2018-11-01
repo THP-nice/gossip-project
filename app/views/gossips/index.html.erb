@@ -1,0 +1,14 @@
+<h1> The Gossip Project</h1><br>
+<% @gossip.each do |gossip| %>
+<div class="card-box">
+<div class="card border-light mb-3" style="max-width: 18rem;">
+<div class="card-header"><a href="/gossips/<%=gossip.id%>"> Gossip n°<%=gossip.id%></a></div>
+<div class="card-body">
+ <h5 class="card-title"><%= gossip.anonymous_gossiper %></h5>
+ <p class="card-text"><%= gossip.content%></p>
+ <a href="<%= edit_gossip_path(gossip.id)%>" class="btn btn-primary">Edit</a>
+ <a href="<%= gossip_path(gossip.id)%>" class="btn btn-danger" data-confirm="Are you sure ?" data-method="DELETE">Delete</a>
+</div>
+</div>
+</div>
+<% end %>
