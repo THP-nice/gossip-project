@@ -30,7 +30,7 @@ a {
 
 a.hover {
   text-decoration: underline;
-  color: red;
+  color: black;
 }
 
 .card-comment {
@@ -44,7 +44,7 @@ a.hover {
 
 .button {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 20px!important;
+  justify-content: flex-end;
+  margin-right: 20px!important;
   margin-top: 20px!important;
 }

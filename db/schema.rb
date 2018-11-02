@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2018_10_31_132353) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
-    t.string "anonymous_commentor"
     t.bigint "gossip_id"
     t.bigint "user_id"
     t.datetime "created_at", null: false
@@ -29,7 +28,6 @@ ActiveRecord::Schema.define(version: 2018_10_31_132353) do
   create_table "gossips", force: :cascade do |t|
     t.string "title"
     t.text "content"
-    t.string "anonymous_gossiper"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

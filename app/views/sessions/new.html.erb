@@ -1,18 +1,16 @@
 <h1>Log in</h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path) do |f| %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.submit "Log in", class: "btn btn-primary" %>
-    <% end %>
-
-    <p>New user? <%= link_to "Sign up now!", new_user_path %></p>
   </div>
 </div>
+<div class='formulix' style='width: 20%; margin-left: 30px; margin-top: 30px;'>
+  <%= form_for(:session, url: login_path) do |f| %>
+  <%= label_tag 'Email:' %>
+  <%= f.text_field :email, placeholder: 'Your email...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br><br>
+  <%= label_tag 'Password:' %>
+  <%= f.text_field :password, type: 'password', placeholder: 'Your password...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br><br>
+  <%= f.submit "Login", class: "btn btn-success"  %>
+<% end %>
+<br>
+<p>New user? <%= link_to "Sign up now!", new_user_path %></p>

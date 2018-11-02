@@ -1,11 +1,8 @@
 <h1> Edit a comment</h1>
 <div style='width: 80%; margin-left: 30px; margin-top: 30px;'>
   <%= form_for [@gossip, @comment] do |f| %>
-  <%= label_tag 'Author:' %>
-  <%= f.text_field :anonymous_commentor, class: "form-control", id: "formGroupExampleInput2" %>
-  <br><br>
   <%= label_tag 'Comment:' %>
   <%= f.text_area :content, class: "form-control", id: "formGroupExampleInput2" %>
   <br><br>
-  <%= f.submit "Edit the Gossip", class: "btn btn-success"  %>
+  <%= f.submit "Edit the comment", class: "btn btn-success"  %>
 <% end %>

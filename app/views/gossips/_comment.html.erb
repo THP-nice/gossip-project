@@ -1,7 +1,7 @@
 <div class="card-comment">
 <div class="card w-50">
  <div class="card-body">
-   <h5 class="card-title"><%= comment.anonymous_commentor %></h5>
+   <h5 class="card-title"><%= user.username %></h5>
    <p class="card-text"><%= comment.content %></p>
    <p class='card-time'>Created @<%= comment.created_at %></p>
     <p class ='card-time'>Updated @<%= comment.updated_at %></p>
@@ -10,4 +10,3 @@
  </div>
 </div>
 </div>
-<br>

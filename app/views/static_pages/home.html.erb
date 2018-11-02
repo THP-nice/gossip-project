@@ -1,3 +1,7 @@
-<p class='button'><%= link_to "SIGN UP", 'users/new', class: "btn btn-lg btn-primary" %></p>
-<p class='button'><%= link_to "SIGN IN", '/login', class: "btn btn-lg btn-primary" %></p>
+<% if logged_in? %>
+  <p class='button'><%= link_to "Log out", logout_path, method: :delete, class: "btn btn-lg btn-primary" %></p>
+<% else %>
+ <p class='button'><%= link_to "Log in", '/login', class: "btn btn-lg btn-primary" %></p>
+<% end %>
+
 <h1>Welcome !</h1>

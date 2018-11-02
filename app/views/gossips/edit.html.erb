@@ -2,12 +2,9 @@
   <%= form_for @gossip do |f| %>
   <%= label_tag 'Title:' %>
   <%= f.text_field :title, placeholder: 'Your title...', class: "form-control", id: "formGroupExampleInput2" %>
-  <br /><br />
+  <br><br>
   <%= label_tag 'Content:' %>
   <%= f.text_area :content, placeholder: 'Your content...', class: "form-control", id: "formGroupExampleInput2" %>
-  <br /><br />
-    <%= label_tag 'Author:' %>
-  <%= f.text_field :anonymous_gossiper, placeholder: 'Your username...', class: "form-control", id: "formGroupExampleInput2" %>
-  <br /><br />
-  <%= f.submit "Add the Gossip", class: "btn btn-success"  %>
+  <br><br>
+  <%= f.submit "Edit the Gossip", class: "btn btn-success"  %>
 <% end %>
